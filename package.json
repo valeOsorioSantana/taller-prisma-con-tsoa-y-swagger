@@ -1,0 +1,36 @@
+{
+  "name": "prismatsoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "tsoa": "tsoa spec && tsoa routes",
+    "build": "tsoa spec && tsoa routes && tsc",
+    "start": "node build/server.js",
+    "prisma:generate": "prisma generate"
+  },
+  "keywords": [],
+  "author": "v.santana_0",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "prisma": "^6.7.0",
+    "prismatsoa": "file:",
+    "reflect-metadata": "^0.2.2",
+    "swagger-ui-express": "^5.0.1",
+    "tsoa": "^4.0.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.17",
+    "@types/swagger-ui-express": "^4.1.8",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}
